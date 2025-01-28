@@ -13,7 +13,7 @@ spec:
         app: dev-app
     spec:
       containers:
-      - name: dev-container
-        image: gcr.io/qwiklabs-gcp-00-63f1677b68e1/sample-app:v1.0
-        ports:
-        - containerPort: 8080
+        - name: dev-container
+          image: us-east1-docker.pkg.dev/qwiklabs-gcp-00-63f1677b68e1/my-repository/hello-cloudbuild-dev:v1.0
+          ports:
+            - containerPort: 8080
